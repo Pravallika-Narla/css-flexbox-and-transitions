@@ -1,0 +1,54 @@
+html code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positioning Elements</title>
+  <link rel="stylesheet" href="task3.css">
+</head>
+<body>
+  <div class="con">
+    <img src="girl1.jpg" alt="Image">
+    <p class="bottom-left">First paragraph of text.</p>
+    <p class="centered">Second paragraph of text.</p>
+  </div>
+</body>
+</html>
+
+css code:
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .con {
+    position: relative;
+    width: 400px; /* Adj container width acc to  requirement */
+    height: 300px; /* Adj container height acc to req requirement */
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100px; /* Adjust image size acc to  requirement */
+    height: 100px; /* Adjust image size acc to requirement */
+  }
+  
+  .bottom-left {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
