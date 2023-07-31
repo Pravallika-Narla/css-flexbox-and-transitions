@@ -1,0 +1,90 @@
+html code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Items Alignment</title>
+  <link rel="stylesheet" href="task2.CSS">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+  </main>
+
+  <footer>
+    <p>footer.</p>
+  </footer>
+</body>
+</html>
+
+css code:
+body {
+    margin: 0;
+    padding: 0;
+    font-family: serif, sans-serif;
+  }
+  
+  header {
+    justify-content: space-around;
+    align-items: center;
+    background-color: grey;
+    height: 80px;
+    display: flex;
+  }
+  
+  nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 20px;
+  }
+  
+  main {
+    min-height: 400px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #f9f9f9;
+  }
+  
+  .box {
+    width: 30%; 
+    height: 200px;
+  }
+  
+  .box1 {
+    background-color: blue;
+  }
+  
+  .box2 {
+    background-color: pink;
+  }
+  
+  .box3 {
+    background-color: green;
+  }
+  
+  footer {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+  }
